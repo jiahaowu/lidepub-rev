@@ -7,7 +7,7 @@ INCLUDE(CheckIncludeFileCXX)
 INCLUDE(CheckIncludeFiles)
 
 SET(CMAKE_EXPORT_COMPILE_COMMANDS on)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
 SET(CMAKE_C_STANDARD 11)
 
 # place binaries and libraries according to GNU standards
