@@ -44,7 +44,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 #define ACTOR_COUNT 2
 
 /* 
-    Usage: lide_c_src_snk_driver.exe in_file out_file
+    Usage: lide_c_src_snk_driver in_file out_file
 */
 int main(int argc, char **argv) {
     char *in_file = NULL; 
@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
 
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "driver.exe error: arg count");
+        fprintf(stderr, "driver error: arg count");
         exit(1);
     }   
 

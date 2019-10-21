@@ -36,7 +36,7 @@ dlcincludepath="-I. -I$UXLIDEC/src/gems/actors/basic \
 dlcmiscflags=""
 dlclibs="$LIDECGEN/lide_c_actors_basic.a $LIDECGEN/lide_c_edges_basic.a \
 $LIDECGEN/lide_c_runtime.a"
-dlctargetfile="lide_c_inner_product_driver.exe"
+dlctargetfile="lide_c_inner_product_driver"
 dlcinstalldir="$LIDECGEN"
 dlcobjs="lide_c_inner_product_driver.o"
 dlcverbose=""

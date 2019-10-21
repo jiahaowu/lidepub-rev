@@ -57,7 +57,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 #define FIFO_SINK1_SWITCH       3
 
 /* 
-    Usage: lide_c_switch_driver.exe source_file control_file out0_file
+    Usage: lide_c_switch_driver source_file control_file out0_file
             out1_file
 */
 
@@ -79,7 +79,7 @@ int main(int argc, char **argv) {
 
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "driver.exe error: arg count");
+        fprintf(stderr, "driver error: arg count");
         exit(1);
     }   
 

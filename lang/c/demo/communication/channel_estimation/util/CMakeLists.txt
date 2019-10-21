@@ -1,8 +1,8 @@
-ADD_EXECUTABLE(lide_c_communication_channel_estimation_driver.exe
+ADD_EXECUTABLE(lide_c_communication_channel_estimation_driver
     lide_c_communication_channel_estimation_driver.c
     )
 
-TARGET_LINK_LIBRARIES(lide_c_communication_channel_estimation_driver.exe
+TARGET_LINK_LIBRARIES(lide_c_communication_channel_estimation_driver
     lide_c_actors_basic
     lide_c_edges_basic
     lide_c_runtime

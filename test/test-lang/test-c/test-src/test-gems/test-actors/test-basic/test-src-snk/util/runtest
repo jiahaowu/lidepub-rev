@@ -29,5 +29,5 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_src_snk_driver.exe input.txt out.txt > diagnostics.txt
+../util/lide_c_src_snk_driver input.txt out.txt > diagnostics.txt
 cat out.txt

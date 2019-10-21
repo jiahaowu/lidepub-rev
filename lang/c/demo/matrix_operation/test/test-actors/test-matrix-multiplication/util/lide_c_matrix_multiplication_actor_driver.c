@@ -46,7 +46,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 #define ACTOR_COUNT 4
 
 /* 
-    Usage: lide_c_matrix_multiplication_actor_driver.exe x_file 
+    Usage: lide_c_matrix_multiplication_actor_driver x_file 
     y_file para_file out_file
 */
 int main(int argc, char **argv) {
@@ -73,7 +73,7 @@ int main(int argc, char **argv) {
 
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "lide_c_multiply_graph_driver.exe error: arg count");
+        fprintf(stderr, "lide_c_multiply_graph_driver error: arg count");
         exit(1);
     }   
 

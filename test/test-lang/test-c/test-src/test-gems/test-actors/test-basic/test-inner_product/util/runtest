@@ -29,6 +29,6 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_inner_product_driver.exe m.txt x.txt y.txt out.txt > diagnostics.txt
+../util/lide_c_inner_product_driver m.txt x.txt y.txt out.txt > diagnostics.txt
 cat out.txt 2> err.txt
 

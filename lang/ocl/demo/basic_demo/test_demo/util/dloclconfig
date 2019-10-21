@@ -37,7 +37,7 @@ dloclmiscldflags=""
 dlocllibpath=""
 dlocllibs="$LIDEOCLGEN/lide_ocl_actors_basic.a \
 $LIDEOCLGEN/lide_ocl_edges_basic.a $LIDEOCLGEN/lide_ocl_runtime.a"
-dlocltargetfile="lide_ocl_inner_product_driver.exe"
+dlocltargetfile="lide_ocl_inner_product_driver"
 dloclinstalldir="$LIDEOCLGEN"
 dloclobjs="lide_ocl_inner_product_driver.o"
 dloclverbose=""

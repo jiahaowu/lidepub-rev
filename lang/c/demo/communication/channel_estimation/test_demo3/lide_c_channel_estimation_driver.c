@@ -62,7 +62,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 
 /*
     Usage:
-    lide_c_channel_estimation_driver.exe subcarrier_time_index.txt subcarrier_freq_index.txt output-csi.txt
+    lide_c_channel_estimation_driver subcarrier_time_index.txt subcarrier_freq_index.txt output-csi.txt
 */
 int main(int argc, char **argv) {
     /* Simulation settings */
@@ -108,7 +108,7 @@ int main(int argc, char **argv) {
 
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "lide_c_channel_estimation_driver.exe error: arg count");
+        fprintf(stderr, "lide_c_channel_estimation_driver error: arg count");
         exit(1);
     }
 

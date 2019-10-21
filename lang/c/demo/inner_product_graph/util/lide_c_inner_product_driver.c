@@ -34,7 +34,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 
 
 /* 
-    Usage: lide_c_inner_product_driver.exe m_file x_file y_file out_file
+    Usage: lide_c_inner_product_driver m_file x_file y_file out_file
 */
 int main(int argc, char **argv) {
     char *m_file = NULL; 
@@ -48,7 +48,7 @@ int main(int argc, char **argv) {
     
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "lide_c_inner_product_driver.exe error: arg count");
+        fprintf(stderr, "lide_c_inner_product_driver error: arg count");
         exit(1);
     }   
 

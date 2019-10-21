@@ -29,5 +29,5 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_add_driver.exe x.txt y.txt out.txt > diagnostics.txt
+../util/lide_c_add_driver x.txt y.txt out.txt > diagnostics.txt
 cat out.txt 2> err.txt

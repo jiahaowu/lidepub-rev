@@ -46,7 +46,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 #define ACTOR_COUNT 3
 
 /* 
-    Usage: lide_c_table_lookup_driver.exe m_file table_file 
+    Usage: lide_c_table_lookup_driver m_file table_file 
             x_file out_file
 */
 int main(int argc, char **argv) {
@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
 
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "driver.exe error: arg count");
+        fprintf(stderr, "driver error: arg count");
         exit(1);
     }   
 

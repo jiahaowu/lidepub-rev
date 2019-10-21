@@ -29,5 +29,5 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_table_lookup_driver.exe m.txt table.txt x.txt out.txt > diagnostics.txt
+../util/lide_c_table_lookup_driver m.txt table.txt x.txt out.txt > diagnostics.txt
 cat out.txt 2> err.txt

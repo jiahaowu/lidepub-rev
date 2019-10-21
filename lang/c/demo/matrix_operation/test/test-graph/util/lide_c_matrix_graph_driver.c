@@ -32,7 +32,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 
 
 /* 
-    Usage: lide_c_matrix_graph_driver.exe x_file y_file para_file out_file
+    Usage: lide_c_matrix_graph_driver x_file y_file para_file out_file
 */
 int main(int argc, char **argv) {
     char *x_file = NULL; 
@@ -48,7 +48,7 @@ int main(int argc, char **argv) {
     FILE *p_file;
     /* Check program usage. */
     if (argc != arg_count) {
-        fprintf(stderr, "lide_c_matrix_graph_driver.exe error: arg count");
+        fprintf(stderr, "lide_c_matrix_graph_driver error: arg count");
         exit(1);
     }   
 

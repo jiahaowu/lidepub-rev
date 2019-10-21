@@ -1,8 +1,8 @@
-ADD_EXECUTABLE(lide_c_block_add_driver.exe
+ADD_EXECUTABLE(lide_c_block_add_driver
     lide_c_block_add_driver.c
     )
 
-TARGET_LINK_LIBRARIES(lide_c_block_add_driver.exe
+TARGET_LINK_LIBRARIES(lide_c_block_add_driver
     lide_c_actors_basic
     lide_c_edges_basic
     lide_c_runtime 

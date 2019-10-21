@@ -39,7 +39,7 @@ dlclibs="$DLXPROJSRC/graph/lide_c_matrix_graph.a \
 $DLXPROJSRC/actors/lide_c_matrix_actor.a \
 $LIDECGEN/lide_c_actors_basic.a $LIDECGEN/lide_c_edges_basic.a \
 $LIDECGEN/lide_c_runtime.a"
-dlctargetfile="lide_c_matrix_graph_driver.exe"
+dlctargetfile="lide_c_matrix_graph_driver"
 dlcinstalldir=""
 dlcobjs="lide_c_matrix_graph_driver.o"
 dlcverbose=""

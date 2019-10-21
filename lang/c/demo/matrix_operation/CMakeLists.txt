@@ -21,26 +21,26 @@ SET(common_libs
     lide_c_runtime
     )
 
-ADD_EXECUTABLE(lide_c_matrix_multiplication_actor_driver.exe
+ADD_EXECUTABLE(lide_c_matrix_multiplication_actor_driver
     test/test-actors/test-matrix-multiplication/util/lide_c_matrix_multiplication_actor_driver.c
     )
-TARGET_LINK_LIBRARIES(lide_c_matrix_multiplication_actor_driver.exe
+TARGET_LINK_LIBRARIES(lide_c_matrix_multiplication_actor_driver
     ${matrix_libs}
     ${common_libs}
     )
 
-ADD_EXECUTABLE(lide_c_matrix_transpose_actor_driver.exe
+ADD_EXECUTABLE(lide_c_matrix_transpose_actor_driver
     test/test-actors/test-matrix-transpose/util/lide_c_matrix_transpose_actor_driver.c
     )
-TARGET_LINK_LIBRARIES(lide_c_matrix_transpose_actor_driver.exe
+TARGET_LINK_LIBRARIES(lide_c_matrix_transpose_actor_driver
     ${matrix_libs}
     ${common_libs}
     )
 
-ADD_EXECUTABLE(lide_c_matrix_graph_driver.exe
+ADD_EXECUTABLE(lide_c_matrix_graph_driver
     test/test-graph/util/lide_c_matrix_graph_driver.c
     )
-TARGET_LINK_LIBRARIES(lide_c_matrix_graph_driver.exe
+TARGET_LINK_LIBRARIES(lide_c_matrix_graph_driver
     ${matrix_libs}
     ${common_libs}
     )

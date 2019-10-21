@@ -35,7 +35,7 @@ dlcincludepath="-I. -I$UXLIDEC/src/gems/actors/basic \
 -I$UXLIDEC/src/tools/runtime"
 dlclibs="$LIDECGEN/lide_c_actors_basic.a $LIDECGEN/lide_c_runtime.a \
 $LIDECGEN/lide_c_edges_basic.a"
-dlctargetfile="lide_c_src_snk_driver.exe"
+dlctargetfile="lide_c_src_snk_driver"
 dlcinstalldir="$LIDECGEN"
 dlcobjs="lide_c_src_snk_driver.o"
 dlcverbose=""

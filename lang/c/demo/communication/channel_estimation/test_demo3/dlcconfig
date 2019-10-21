@@ -36,7 +36,7 @@ dlclibpath="-lm -Q"
 dlclibs="$LIDECGEN/lide_c_actors_basic.a $LIDECGEN/lide_c_runtime.a \
 $LIDECGEN/lide_c_communication_common.a  $LIDECGEN/lide_c_edges_basic.a \
 $LIDECGEN/lide_c_communication_channel_estimation.a -lm -Q"
-dlctargetfile="lide_c_channel_estimation_driver.exe"
+dlctargetfile="lide_c_channel_estimation_driver"
 dlcinstalldir="$LIDECGEN"
 dlcobjs="lide_c_channel_estimation_driver.o"
 dlcverbose=""

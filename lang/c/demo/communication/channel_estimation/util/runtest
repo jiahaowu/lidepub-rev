@@ -27,5 +27,5 @@
 # @ddblock_end copyright
 ################################################################################
 rm -f output-csi.txt
-../util/lide_c_communication_channel_estimation_driver.exe subcarrier_time_index.txt subcarrier_freq_index.txt output-csi.txt > diagnostics.txt
+../util/lide_c_communication_channel_estimation_driver subcarrier_time_index.txt subcarrier_freq_index.txt output-csi.txt > diagnostics.txt
 cat output-csi.txt 2> err.txt
