@@ -1,0 +1,6 @@
+LIDE-OCL --- The DSPCAD Lightweight Dataflow Environment 
+OpenCL-targeted plug-in.
+
+This version of LIDE-OCL is available as part of the 
+following version of LIDE:
+

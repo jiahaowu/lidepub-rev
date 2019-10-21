@@ -1,0 +1,6 @@
+LIDE-C --- The DSPCAD Lightweight Dataflow Environment C-targeted 
+plug-in.
+
+This version of LIDE-C is available as part of the following
+version of LIDE:
+
