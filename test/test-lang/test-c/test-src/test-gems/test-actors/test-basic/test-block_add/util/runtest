@@ -29,5 +29,5 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_block_add_driver param.txt x.txt y.txt out.txt > diagnostics.txt
+lide_c_block_add_driver param.txt x.txt y.txt out.txt > diagnostics.txt
 cat out.txt 2> err.txt

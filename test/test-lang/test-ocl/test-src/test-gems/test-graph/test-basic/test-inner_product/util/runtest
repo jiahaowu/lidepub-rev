@@ -28,5 +28,5 @@
 # @ddblock_end copyright 
 ################################################################################
 
-../util/lide_ocl_inner_product_driver m.txt x.txt y.txt out.txt > diagnostics.txt
+lide_ocl_inner_product_driver m.txt x.txt y.txt out.txt > diagnostics.txt
 cat out.txt

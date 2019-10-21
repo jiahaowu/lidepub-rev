@@ -29,7 +29,7 @@
 ################################################################################
 
 rm -f out.txt
-../util/lide_c_switch_driver source.txt control.txt out0.txt out1.txt > \
+lide_c_switch_driver source.txt control.txt out0.txt out1.txt > \
         diagnostics.txt
 cat out0.txt > out.txt
 cat out1.txt >> out.txt
