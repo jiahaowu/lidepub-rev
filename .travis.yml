@@ -1,0 +1,20 @@
+sudo: true
+
+language:
+  - cpp
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+
+before_install:
+  - pip install --user cpp-coveralls
+  - sudo apt-get install -y lcov
+  - gem install coveralls-lcov
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build .
