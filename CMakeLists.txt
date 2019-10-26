@@ -7,29 +7,17 @@ INCLUDE(CheckIncludeFileCXX)
 INCLUDE(CheckIncludeFiles)
 
 SET(CMAKE_EXPORT_COMPILE_COMMANDS on)
-option(CODE_COVERAGE "Enable coverage reporting" ON)
-if(CODE_COVERAGE AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-  # Add required flags (GCC & LLVM/Clang)
-  target_compile_options(coverage_config INTERFACE
-    -O0        # no optimization
-    -g         # generate debug info
-    --coverage # sets all required flags
-  )
-  if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.13)
-    target_link_options(coverage_config INTERFACE --coverage)
-  else()
-    target_link_libraries(coverage_config INTERFACE --coverage)
-  endif()
-endif(CODE_COVERAGE)
+SET(CMAKE_CXX_FLAGS "-fprofile-arcs -ftest-coverage")
+SET(CMAKE_C_FLAGS "-fprofile-arcs -ftest-coverage")
 SET(CMAKE_C_STANDARD 11)
 
 # place binaries and libraries according to GNU standards
-include(GNUInstallDirs)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
+INCLUDE(GNUInstallDirs)
+SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
-find_package(Threads REQUIRED)
+FIND_PACKAGE(Threads REQUIRED)
 
 # Language C
 INCLUDE_DIRECTORIES(
