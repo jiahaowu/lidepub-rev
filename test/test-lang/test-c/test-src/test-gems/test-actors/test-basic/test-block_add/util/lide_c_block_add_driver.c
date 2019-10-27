@@ -50,7 +50,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 /* 
     Usage: lide_c_block_add_driver x_file y_file out_file
 */
-int main(int argc, char **argv) {
+int driver(int argc, char **argv) {
     char *param_file = NULL;
     char *x_file = NULL; 
     char *y_file = NULL; 

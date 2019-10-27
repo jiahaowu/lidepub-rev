@@ -3,7 +3,7 @@ ADD_EXECUTABLE(test_add_02 test.cpp)
 TARGET_LINK_LIBRARIES(test_add_02  
         gtest 
         gtest_main
-        test_add_driver
+        lide_c_add_driver
         Threads::Threads
     )
 

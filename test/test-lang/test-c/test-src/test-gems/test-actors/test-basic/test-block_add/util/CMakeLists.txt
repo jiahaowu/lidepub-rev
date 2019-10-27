@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(lide_c_block_add_driver
+ADD_LIBRARY(lide_c_block_add_driver
     lide_c_block_add_driver.c
     )
 
