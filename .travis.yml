@@ -18,7 +18,7 @@ script:
   - cd build
   - cmake ..
   - cmake --build .
-  - ./bin/lide_c_add_driver
+  - ./bin/lide_c_add_driver &> /dev/null
 
 after_success:
   - coveralls --root .. -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*third.*"
