@@ -22,5 +22,5 @@ script:
   - ctest
 
 after_success:
-  - coveralls --root .. -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*third.*"
+  - coveralls --root .. -E ".*CMakeFiles.*" -E ".*test/.*.c.*" -E ".*test/.*.cpp.*" -E ".*third.*"
 
