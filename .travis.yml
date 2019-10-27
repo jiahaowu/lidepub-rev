@@ -19,7 +19,7 @@ script:
   - cd build
   - cmake ..
   - cmake --build .
-  - cd test/test-lang/test-c/test-src/test-gems/test-actors/test-basic/test-add/test01 && ./runme
+  - cd ../test/test-lang/test-c/test-src/test-gems/test-actors/test-basic/test-add/test01 && ./runme
 
 after_success:
   - coveralls --root .. -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*third.*"
