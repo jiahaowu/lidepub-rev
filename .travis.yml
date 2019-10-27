@@ -12,13 +12,14 @@ before_install:
   - pip install --user cpp-coveralls
   - sudo apt-get install -y lcov ocl-icd-opencl-dev
   - gem install coveralls-lcov
+  - export PATH=`pwd`/build/bin:$PATH
 
 script:
   - mkdir build
   - cd build
   - cmake ..
   - cmake --build .
-  - ./bin/lide_c_add_driver &> /dev/null
+  - cd test/test-lang/test-c/test-src/test-gems/test-actors/test-basic/test-add/test01 && ./runme
 
 after_success:
   - coveralls --root .. -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E ".*third.*"
