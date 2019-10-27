@@ -1,7 +1,9 @@
--------------------------------------------------------------------------
+[![Build Status](https://travis-ci.org/jiahaowu/lidepub-rev.svg?branch=master)](https://travis-ci.org/jiahaowu/lidepub-rev)
+[![Coverage Status](https://coveralls.io/repos/github/jiahaowu/lidepub-rev/badge.svg?branch=master)](https://coveralls.io/github/jiahaowu/lidepub-rev?branch=master)
+
 @ddblock_begin copyright
-----------------------------------------------------------------------------
 Copyright (c) 1997-2018
+
 Maryland DSPCAD Research Group, The University of Maryland at College Park 
 
 Permission is hereby granted, without written agreement and without
@@ -22,9 +24,8 @@ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE
 PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF
 MARYLAND HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 ENHANCEMENTS, OR MODIFICATIONS.
-----------------------------------------------------------------------------
+
 @ddblock_end copyright
--------------------------------------------------------------------------
 
 The DSPCAD Lightweight Dataflow Environment (LIDE).
 See doc/version.txt for version information.
