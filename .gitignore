@@ -7,3 +7,4 @@ compile_commands.json
 diagnostics.txt
 out.txt
 err.txt
+third/

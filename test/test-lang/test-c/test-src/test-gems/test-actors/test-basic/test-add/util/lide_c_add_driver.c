@@ -34,6 +34,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 #include "lide_c_file_sink.h"
 #include "lide_c_add.h"
 #include "lide_c_util.h"
+#include "lide_c_add_driver.h"
 
 #define BUFFER_CAPACITY 1024
 
@@ -49,7 +50,8 @@ ENHANCEMENTS, OR MODIFICATIONS.
 /* 
     Usage: lide_c_add_driver x_file y_file out_file
 */
-int main(int argc, char **argv) {
+
+int driver(int argc, char **argv) {
     char *x_file = NULL; 
     char *y_file = NULL; 
     char *out_file = NULL; 
