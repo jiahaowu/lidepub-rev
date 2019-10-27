@@ -4,6 +4,7 @@ TARGET_LINK_LIBRARIES(test_add_01
         gtest 
         gtest_main
         test_add_driver
+        Threads::Threads
     )
 
 ADD_TEST(
