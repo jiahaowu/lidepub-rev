@@ -10,7 +10,7 @@ addons:
 
 before_install:
   - pip install --user cpp-coveralls
-  - sudo apt-get install -y lcov ocl-icd-opencl-dev
+  - sudo apt-get install -y lcov
   - gem install coveralls-lcov
   - export PATH=`pwd`/build/bin:$PATH
 

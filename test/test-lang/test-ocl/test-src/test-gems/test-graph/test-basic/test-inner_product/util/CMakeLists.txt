@@ -1,5 +1,3 @@
-FIND_PACKAGE(OpenCL REQUIRED)
-
 ADD_LIBRARY(lide_ocl_inner_product_driver
     lide_ocl_inner_product_driver.cpp
     )
