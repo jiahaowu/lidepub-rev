@@ -19,6 +19,7 @@ SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 FIND_PACKAGE(Threads REQUIRED)
+FIND_PACKAGE(OpenCL QUIET)
 
 ADD_CUSTOM_TARGET(third_parties)
 INCLUDE(ExternalProject)
@@ -63,19 +64,20 @@ ADD_SUBDIRECTORY(lang/c/src/gems/graph/basic)
 ADD_SUBDIRECTORY(lang/c/src/tools/runtime)
 
 # Language OCL
+if(OpenCL_FOUND)
 INCLUDE_DIRECTORIES(
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/actors/common
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/actors/basic
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/edges/basic
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/graph/basic
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/graph/common
-    ${PROJECT_SOURCE_DIR}/lang/ocl/src/tools/runtime
-    )
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/actors/common
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/actors/basic
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/edges/basic
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/graph/basic
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/gems/graph/common
+  ${PROJECT_SOURCE_DIR}/lang/ocl/src/tools/runtime
+  )
 ADD_SUBDIRECTORY(lang/ocl/src/gems/actors/basic)
 ADD_SUBDIRECTORY(lang/ocl/src/gems/edges/basic)
 ADD_SUBDIRECTORY(lang/ocl/src/gems/graph/basic)
 ADD_SUBDIRECTORY(lang/ocl/src/tools/runtime)
-
+endif(OpenCL_FOUND)
 
 ENABLE_TESTING()
 
