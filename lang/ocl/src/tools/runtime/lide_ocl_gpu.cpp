@@ -177,6 +177,5 @@ void lide_ocl_gpu_cleanup (lide_ocl_gpu_pointer gpu){
     if(gpu->cqCommandQueue)clReleaseCommandQueue(gpu->cqCommandQueue);
     if(gpu->cxGPUContext)clReleaseContext(gpu->cxGPUContext);
     free(gpu);
-    exit(1);
     return;
 }

@@ -102,9 +102,11 @@ int driver(int argc, char **argv) {
     /* Execute the graph. */
     lide_ocl_util_simple_scheduler(graph_context->actors, 
                     graph_context->actor_count, graph_context->descriptors);
+    printf("Here\n");
 
     /* Normal termination. */
     lide_ocl_inner_product_graph_terminate(
             (lide_ocl_inner_product_graph_context_type *)graph_context);
+    printf("Here\n");
     return 0;
 }
