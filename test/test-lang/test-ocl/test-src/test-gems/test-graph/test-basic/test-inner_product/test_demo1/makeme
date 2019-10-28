@@ -28,5 +28,5 @@
 # @ddblock_end copyright 
 ################################################################################
 
-make -C "$dxprojroot"/build
+make -C "$dxprojroot"/build test_ocl_inner_product_01
 

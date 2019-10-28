@@ -30,5 +30,5 @@
 
 # Script to build this test.
 
-make -C "$dxprojroot"/build
+make -C "$dxprojroot"/build test_table_lookup_02
 
