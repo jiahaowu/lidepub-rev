@@ -28,4 +28,4 @@
 # @ddblock_end copyright 
 ################################################################################
 
-../util/runtest
+"$dxprojroot"/build/bin/test_ocl_inner_product_01

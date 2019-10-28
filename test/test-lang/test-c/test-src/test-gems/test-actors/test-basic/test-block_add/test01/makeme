@@ -29,5 +29,5 @@
 ################################################################################
 # Script to build this test.
 
-../util/maketest
+make -C "$dxprojroot"/build
 

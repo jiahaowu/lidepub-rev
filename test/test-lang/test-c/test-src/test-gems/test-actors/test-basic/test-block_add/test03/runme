@@ -27,4 +27,5 @@
 #
 # @ddblock_end copyright
 ################################################################################
-../util/runtest 
+
+"$dxprojroot"/build/bin/test_block_add_03

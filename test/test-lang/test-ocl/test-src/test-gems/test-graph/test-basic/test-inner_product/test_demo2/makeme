@@ -28,6 +28,5 @@
 # @ddblock_end copyright 
 ################################################################################
 
-pushd ../util
-./makeme
-popd
+make -C "$dxprojroot"/build
+
