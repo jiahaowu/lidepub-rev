@@ -28,4 +28,5 @@
 # @ddblock_end copyright 
 ################################################################################
 
-"$dxprojroot"/build/bin/test_ocl_inner_product_01
+"$dxprojroot"/build/bin/test_ocl_inner_product_01 > diagnostics.txt
+cat out.txt

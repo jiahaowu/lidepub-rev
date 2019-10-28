@@ -28,4 +28,6 @@
 # @ddblock_end copyright
 ################################################################################
 
-"$dxprojroot"/build/bin/test_inner_product_02
+rm -f out.txt
+"$dxprojroot"/build/bin/test_inner_product_02 > diagnostics.txt
+cat out.txt 2> err.txt

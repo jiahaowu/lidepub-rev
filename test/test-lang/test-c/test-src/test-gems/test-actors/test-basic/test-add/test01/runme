@@ -29,5 +29,5 @@
 ################################################################################
 
 rm -f out.txt
-"$dxprojroot"/build/bin/test_add_01
+"$dxprojroot"/build/bin/test_add_01 > diagnostics.txt
 cat out.txt 2> err.txt

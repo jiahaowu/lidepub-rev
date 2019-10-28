@@ -28,4 +28,7 @@
 # @ddblock_end copyright
 ################################################################################
 
-"$dxprojroot"/build/bin/test_table_lookup_01
+rm -f out.txt
+"$dxprojroot"/build/bin/test_table_lookup_01 > diagnostics.txt
+cat out.txt 2> err.txt
+

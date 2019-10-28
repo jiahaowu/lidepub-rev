@@ -28,4 +28,8 @@
 # @ddblock_end copyright
 ################################################################################
 
-"$dxprojroot"/build/bin/test_switch_02
+rm -f out.txt
+"$dxprojroot"/build/bin/test_switch_02 > diagnostics.txt
+cat out0.txt > out.txt
+cat out1.txt >> out.txt
+cat out.txt 2> err.txt
