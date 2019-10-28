@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(lide_c_switch_driver
+ADD_LIBRARY(lide_c_switch_driver
     lide_c_switch_driver.c
     )
 

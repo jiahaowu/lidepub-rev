@@ -46,7 +46,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 /* 
     Usage: lide_c_src_snk_driver in_file out_file
 */
-int main(int argc, char **argv) {
+int driver(int argc, char **argv) {
     char *in_file = NULL; 
     char *out_file = NULL; 
     lide_c_actor_context_type *actors[ACTOR_COUNT];

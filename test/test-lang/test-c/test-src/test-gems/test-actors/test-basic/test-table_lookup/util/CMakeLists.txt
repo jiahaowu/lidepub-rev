@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(lide_c_table_lookup_driver
+ADD_LIBRARY(lide_c_table_lookup_driver
     lide_c_table_lookup_driver.c
     )
 

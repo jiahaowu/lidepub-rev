@@ -61,7 +61,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
             out1_file
 */
 
-int main(int argc, char **argv) {
+int driver(int argc, char **argv) {
     char *source_file = NULL; 
     char *source_control_file = NULL; 
     char *out0_file = NULL; 

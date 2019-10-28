@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(lide_c_inner_product_driver
+ADD_LIBRARY(lide_c_inner_product_driver
     lide_c_inner_product_driver.c
     )
 

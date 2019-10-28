@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(lide_c_src_snk_driver
+ADD_LIBRARY(lide_c_src_snk_driver
     lide_c_src_snk_driver.c
     )
 
