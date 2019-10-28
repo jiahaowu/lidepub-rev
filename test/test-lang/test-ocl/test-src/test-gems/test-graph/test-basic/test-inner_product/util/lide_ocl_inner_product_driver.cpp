@@ -36,7 +36,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 /* 
     Usage: lide_ocl_inner_product_driver m_file x_file y_file out_file
 */
-int main(int argc, char **argv) {
+int driver(int argc, char **argv) {
     char *m_file = NULL; 
     char *x_file = NULL; 
     char *y_file = NULL; 
@@ -102,8 +102,7 @@ int main(int argc, char **argv) {
     /* Execute the graph. */
     lide_ocl_util_simple_scheduler(graph_context->actors, 
                     graph_context->actor_count, graph_context->descriptors);
-    
-    
+
     /* Normal termination. */
     lide_ocl_inner_product_graph_terminate(
             (lide_ocl_inner_product_graph_context_type *)graph_context);

@@ -1,5 +1,5 @@
-ADD_EXECUTABLE(lide_c_inner_product_graph_driver
-    lide_c_inner_product_driver.c
+ADD_LIBRARY(lide_c_inner_product_graph_driver
+lide_c_inner_product_graph_driver.c
     )
 
 TARGET_LINK_LIBRARIES(lide_c_inner_product_graph_driver

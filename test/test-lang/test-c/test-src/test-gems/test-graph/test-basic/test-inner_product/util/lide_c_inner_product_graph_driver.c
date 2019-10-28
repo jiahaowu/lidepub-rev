@@ -36,7 +36,7 @@ ENHANCEMENTS, OR MODIFICATIONS.
 /* 
     Usage: lide_c_inner_product_driver m_file x_file y_file out_file
 */
-int main(int argc, char **argv) {
+int driver(int argc, char **argv) {
     char *m_file = NULL; 
     char *x_file = NULL; 
     char *y_file = NULL; 

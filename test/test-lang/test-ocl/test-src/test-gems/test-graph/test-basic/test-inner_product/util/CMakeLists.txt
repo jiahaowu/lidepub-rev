@@ -1,6 +1,6 @@
 FIND_PACKAGE(OpenCL REQUIRED)
 
-ADD_EXECUTABLE(lide_ocl_inner_product_driver
+ADD_LIBRARY(lide_ocl_inner_product_driver
     lide_ocl_inner_product_driver.cpp
     )
 

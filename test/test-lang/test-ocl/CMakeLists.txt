@@ -1,1 +1,1 @@
-add_subdirectory(test-src/test-gems/test-graph/test-basic/test-inner_product/util)
+add_subdirectory(test-src/test-gems/test-graph/test-basic/test-inner_product)
